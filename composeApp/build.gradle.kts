@@ -3,10 +3,10 @@ import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    alias(libs.plugins.kotlinMultiplatform)
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.composeMultiplatform)
-    alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.kotlin.multiplatform)
+    alias(libs.plugins.compose)
+    alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.android.application)
 }
 
 kotlin {
@@ -32,7 +32,6 @@ kotlin {
 
     sourceSets {
         val desktopMain by getting
-
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
@@ -55,7 +54,6 @@ kotlin {
 android {
     namespace = "com.kazakago.blueprint"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
-
     defaultConfig {
         applicationId = "com.kazakago.blueprint"
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -87,7 +85,6 @@ dependencies {
 compose.desktop {
     application {
         mainClass = "com.kazakago.blueprint.MainKt"
-
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "com.kazakago.blueprint"
