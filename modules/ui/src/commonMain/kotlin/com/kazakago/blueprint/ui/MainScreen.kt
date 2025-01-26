@@ -19,10 +19,14 @@ import blueprint_kmp.modules.ui.generated.resources.Res
 import blueprint_kmp.modules.ui.generated.resources.compose_multiplatform
 import com.kazakago.blueprint.infra.getPlatform
 import com.kazakago.blueprint.model.Greeting
+import kotlinx.serialization.Serializable
 import org.jetbrains.compose.resources.painterResource
 
+@Serializable
+data object MainRoute
+
 @Composable
-fun Screen() {
+fun MainScreen() {
     var showContent by remember { mutableStateOf(false) }
     Scaffold {
         Column(

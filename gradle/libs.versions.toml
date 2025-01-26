@@ -1,17 +1,21 @@
 [versions]
 kotlin = "2.1.0"
+compose = "1.7.3"
 android-plugin = "8.8.0"
 android-compileSdk = "35"
 android-minSdk = "24"
 android-targetSdk = "35"
 
 [libraries]
-androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.10.0" }
 kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version = "1.10.1" }
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version = "1.7.3" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.10.0" }
+androidx-navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version = "2.8.0-alpha12" }
 
 [plugins]
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 android-application = { id = "com.android.application", version.ref = "android-plugin" }
 android-library = { id = "com.android.library", version.ref = "android-plugin" }
-compose = { id = "org.jetbrains.compose", version = "1.7.0" }
-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
