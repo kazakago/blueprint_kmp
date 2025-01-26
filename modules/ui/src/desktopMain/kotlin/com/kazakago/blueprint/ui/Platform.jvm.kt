@@ -1,4 +1,4 @@
-package com.kazakago.blueprint
+package com.kazakago.blueprint.ui
 
 class JVMPlatform: Platform {
     override val name: String = "Java ${System.getProperty("java.version")}"

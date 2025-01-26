@@ -1,4 +1,4 @@
-package com.kazakago.blueprint
+package com.kazakago.blueprint.ui
 
 import android.os.Build
 
