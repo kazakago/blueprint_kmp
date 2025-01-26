@@ -36,6 +36,8 @@ kotlin {
         }
         commonMain.dependencies {
             implementation(projects.modules.ui)
+            implementation(projects.modules.infra)
+            implementation(projects.modules.model)
             implementation(compose.runtime)
             implementation(compose.ui)
         }

@@ -30,3 +30,5 @@ dependencyResolutionManagement {
 
 include(":composeApp")
 include(":modules:ui")
+include(":modules:infra")
+include(":modules:model")

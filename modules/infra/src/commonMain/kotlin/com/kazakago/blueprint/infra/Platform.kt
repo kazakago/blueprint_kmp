@@ -1,4 +1,4 @@
-package com.kazakago.blueprint.ui
+package com.kazakago.blueprint.infra
 
 interface Platform {
     val name: String
