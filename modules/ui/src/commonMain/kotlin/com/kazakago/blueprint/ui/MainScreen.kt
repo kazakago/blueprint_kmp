@@ -4,7 +4,7 @@ import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.safeDrawingPadding
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -29,11 +29,11 @@ data object MainRoute
 @Composable
 fun MainScreen() {
     var showContent by remember { mutableStateOf(false) }
-    Scaffold {
+    Scaffold { paddngValues ->
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .safeDrawingPadding(),
+                .padding(paddngValues),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Button(onClick = { showContent = !showContent }) {
