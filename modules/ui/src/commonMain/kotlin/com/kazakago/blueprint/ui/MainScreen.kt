@@ -21,6 +21,7 @@ import com.kazakago.blueprint.infra.getPlatform
 import com.kazakago.blueprint.model.Greeting
 import kotlinx.serialization.Serializable
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Serializable
 data object MainRoute
@@ -49,5 +50,13 @@ fun MainScreen() {
                 }
             }
         }
+    }
+}
+
+@Preview
+@Composable
+fun MainScreenPreview() {
+    AppTheme {
+        MainScreen()
     }
 }
