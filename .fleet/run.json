@@ -23,7 +23,7 @@
             "type": "gradle",
             "workingDir": "$PROJECT_DIR$",
             "allowParallelRun": true,
-            "tasks": ["composeApp:run"],
+            "tasks": ["composeApp:run"]
         },
         {
             "name": "webApp",
