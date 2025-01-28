@@ -1,4 +1,4 @@
-package com.kazakago.blueprint.ui
+package com.kazakago.blueprint.ui.main
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -19,6 +19,7 @@ import blueprint_kmp.modules.ui.generated.resources.Res
 import blueprint_kmp.modules.ui.generated.resources.compose_multiplatform
 import com.kazakago.blueprint.infra.getPlatform
 import com.kazakago.blueprint.model.Greeting
+import com.kazakago.blueprint.ui.theme.AppTheme
 import kotlinx.serialization.Serializable
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -55,7 +56,7 @@ fun MainScreen() {
 
 @Preview
 @Composable
-fun MainScreenPreview() {
+private fun MainScreenPreview() {
     AppTheme {
         MainScreen()
     }

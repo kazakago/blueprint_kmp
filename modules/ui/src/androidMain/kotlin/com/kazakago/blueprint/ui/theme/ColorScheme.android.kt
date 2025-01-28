@@ -1,4 +1,4 @@
-package com.kazakago.blueprint.ui
+package com.kazakago.blueprint.ui.theme
 
 import android.os.Build
 import androidx.compose.material3.dynamicDarkColorScheme

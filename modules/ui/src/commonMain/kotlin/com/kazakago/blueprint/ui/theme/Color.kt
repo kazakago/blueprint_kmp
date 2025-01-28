@@ -1,4 +1,4 @@
-package com.kazakago.blueprint.ui
+package com.kazakago.blueprint.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
